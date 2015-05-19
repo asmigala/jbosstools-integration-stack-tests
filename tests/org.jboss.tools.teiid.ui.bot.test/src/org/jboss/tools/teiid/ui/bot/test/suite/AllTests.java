@@ -1,6 +1,7 @@
 package org.jboss.tools.teiid.ui.bot.test.suite;
 
 import org.jboss.reddeer.junit.runner.RedDeerSuite;
+import org.jboss.tools.teiid.ui.bot.test.CreateRestProcedureTest;
 import org.jboss.tools.teiid.ui.bot.test.E2eRecursiveXmlTextTest;
 import org.jboss.tools.teiid.ui.bot.test.ImportWizardTest;
 import org.jboss.tools.teiid.ui.bot.test.JDBCImportWizardTest;
@@ -23,6 +24,7 @@ import org.junit.runners.Suite.SuiteClasses;
 	ImportWizardTest.class,
 	LdapImportTest.class,
 	ModelWizardTest.class,
+	CreateRestProcedureTest.class,
 	TopDownWsdlTest.class,
 	VirtualGroupTutorialTest.class,
 	E2eRecursiveXmlTextTest.class,
