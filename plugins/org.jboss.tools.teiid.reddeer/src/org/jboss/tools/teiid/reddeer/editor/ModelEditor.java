@@ -275,6 +275,7 @@ public class ModelEditor extends SWTBotEditor {
 			viewer = getGraphicalViewer(MAPPING_DIAGRAM);
 		}
 		viewer.select(parts);
+		AbstractWait.sleep(TimePeriod.SHORT);
 	}
 	
 	
@@ -343,7 +344,7 @@ public class ModelEditor extends SWTBotEditor {
 	public InputSetEditor openInputSetEditor(boolean param){
 		viewer = getGraphicalViewer(DIAGRAM);
 		getModelDiagram(INPUT_SET, DIAGRAM).select();
-		viewer.clickContextMenu("Edit");
+		viewer.clickContextMenu("Edit Input Set");
 		return new InputSetEditor();
 	}
 	
