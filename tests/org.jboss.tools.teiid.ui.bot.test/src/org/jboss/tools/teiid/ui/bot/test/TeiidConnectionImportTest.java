@@ -33,7 +33,7 @@ import org.junit.runner.RunWith;
 		ConnectionProfilesConstants.ORACLE_10G_BQT2, ConnectionProfilesConstants.ORACLE_11G_BQT2,
 		ConnectionProfilesConstants.ORACLE_12C_BQT, ConnectionProfilesConstants.SQL_SERVER_2005_BQT2,
 		ConnectionProfilesConstants.SQL_SERVER_2008_BQT2, ConnectionProfilesConstants.SQL_SERVER_2012_BQT2,
-		ConnectionProfilesConstants.DV6_DS1, ConnectionProfilesConstants.AUDIOBOOKS_HSQLDB,
+		ConnectionProfilesConstants.DV6_DS1, 
 		ConnectionProfilesConstants.SQL_SERVER_2000_BQT2, ConnectionProfilesConstants.MYSQL_50_BQT2,
 		ConnectionProfilesConstants.MYSQL_51_BQT2, ConnectionProfilesConstants.MYSQL_55_BQT2,
 		ConnectionProfilesConstants.POSTGRESQL_84_BQT2, ConnectionProfilesConstants.POSTGRESQL_91_BQT2,
@@ -201,15 +201,6 @@ public class TeiidConnectionImportTest extends SWTBotTestCase {
 		teiidImporterProperties.setProperty(TeiidConnectionImportWizard.IMPORT_PROPERTY_SCHEMA_PATTERN, "%BQT%");
 		importModel(ConnectionProfilesConstants.DB2_101_BQT, "db2101Model", teiidImporterProperties);
 		checkImportedModel("db2101Model", "SMALLA", "SMALLB");
-
-	}
-
-	@Test
-	public void db281Test() {
-		Properties teiidImporterProperties = new Properties();
-		teiidImporterProperties.setProperty(TeiidConnectionImportWizard.IMPORT_PROPERTY_TABLE_NAME_PATTERN, "SMALL%");
-		importModel(ConnectionProfilesConstants.DB2_81_BQT2, "db281Model", teiidImporterProperties);
-		checkImportedModel("db281Model", "SMALLA", "SMALLB");
 
 	}
 
